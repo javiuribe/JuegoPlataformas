@@ -3,16 +3,16 @@ using UnityEngine;
 public class Personaje : MonoBehaviour
 {
 	private bool saltando;
-	private int vidas;
+	public int Vidas{get;set;}
 	private bool atacando;
-	private int monedas;
+	public int monedas{get;set;}
 	public GameObject ataqueOriginal;
 	public GameObject ataquePosicion;
 	public Animator animator;
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
-		vidas = 3;
+		Vidas = 3;
 	}
 
 	// Update is called once per frame
@@ -78,9 +78,9 @@ public class Personaje : MonoBehaviour
 			animator.SetTrigger("Hurt");
 			other.gameObject.SetActive(false);
 			Destroy(other.gameObject, 0.5f);
-			vidas--;
-			Debug.Log("Vidas:" + vidas);
-			if (vidas == 0)
+			Vidas--;
+			Debug.Log("Vidas:" + Vidas);
+			if (Vidas == 0)
 			{
 				Debug.Log("GAME OVER");
 				//gameObject.SetActive(false);
