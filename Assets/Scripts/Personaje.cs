@@ -30,7 +30,7 @@ public class Personaje : MonoBehaviour
 		{
 			animator.SetTrigger("Jump");
 			animator.SetFloat("AirSpeedY", 1);
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 350.0f));
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 500.0f));
 			saltando = true;
 			animator.SetBool("Grounded", false);
 			Invoke("BajarVelocidadAire", 0.6f);

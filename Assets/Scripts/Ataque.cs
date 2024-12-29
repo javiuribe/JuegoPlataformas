@@ -5,7 +5,7 @@ public class Ataque : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 1f);
     }
 
     // Update is called once per frame
@@ -15,11 +15,13 @@ public class Ataque : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D other) {
+        Debug.Log("COLISION Con:"+ other.gameObject.tag);
         if (other.gameObject.tag == "Enemigo"){
             other.gameObject.SetActive(false);
+            Debug.Log("Dentro de colision enemigo");
             Destroy(other.gameObject, 0.5f);
-            gameObject.SetActive(false);
-            Destroy(gameObject, 0.5f);
+            //gameObject.SetActive(false);
+            //Destroy(gameObject, 0.5f);
         }
     }
 }

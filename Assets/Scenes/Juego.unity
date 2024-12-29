@@ -495,7 +495,7 @@ Transform:
   m_GameObject: {fileID: 574759659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.025, y: 0.057, z: 0}
+  m_LocalPosition: {x: 1.8, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -984,7 +984,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.71005386, y: 0.12305951}
+  m_Offset: {x: 1.0200272, y: 0.061064243}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.28866667}
@@ -994,7 +994,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.452933, y: 1.3147154}
+  m_Size: {x: 1.142959, y: 1.4387059}
   m_EdgeRadius: 0
 --- !u!4 &953462130
 Transform:
@@ -1027,6 +1027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ataqueOriginal: {fileID: 8458078765056999047, guid: 97f820504cfd05b4287ddafa8bd427ce, type: 3}
   ataquePosicion: {fileID: 574759659}
+  animator: {fileID: 1475988434}
 --- !u!1 &986882477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1217,7 @@ Transform:
   m_GameObject: {fileID: 1047929525}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9, y: -2.22, z: 9.886213}
+  m_LocalPosition: {x: 3.73, y: -1.22, z: 9.886213}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1704,7 +1705,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1475988431}
   - component: {fileID: 1475988432}
-  - component: {fileID: 1475988433}
   - component: {fileID: 1475988434}
   m_Layer: 0
   m_Name: ImagenPersonaje
@@ -1783,22 +1783,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &1475988433
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475988430}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: e58542e6cdcad974284618515fe0cf15, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!95 &1475988434
 Animator:
   serializedVersion: 7
@@ -1979,13 +1963,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826100556}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.015133011, z: -0, w: 0.9998855}
-  m_LocalPosition: {x: 8.5, y: -1.37, z: 9.92}
+  m_LocalRotation: {x: -0, y: 0.011232589, z: -0, w: 0.999937}
+  m_LocalPosition: {x: 6.85, y: -2.93, z: 9.96}
   m_LocalScale: {x: 2.7466, y: 2.7466, z: 2.7466}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1136272814}
-  m_LocalEulerAnglesHint: {x: 0, y: -1.734, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 1.287, z: 0}
 --- !u!114 &1826100559
 MonoBehaviour:
   m_ObjectHideFlags: 0
