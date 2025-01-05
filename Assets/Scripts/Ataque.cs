@@ -18,8 +18,8 @@ public class Ataque : MonoBehaviour
         if (other.gameObject.tag == "Enemigo"){
             other.gameObject.SetActive(false);
             Destroy(other.gameObject, 0.5f);
-            //gameObject.SetActive(false);
-            //Destroy(gameObject, 0.5f);
+            gameObject.SetActive(false);
+            Destroy(gameObject, 0.5f);
         }
     }
 }
